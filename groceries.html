@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Groceries & Provisions — Overal Stores</title>
+<meta name="description" content="Groceries & Provisions at Overal Stores, Warri. Search the shelf and ask on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav scrolled nav--static" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark glitter" aria-hidden="true">O</span>
+      <span class="nav__name">Overal Stores</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <div class="nav__search">
+        <svg class="nav__search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" class="nav__search-input" id="menuSearch" placeholder="Search products&hellip;" autocomplete="off">
+        <div class="nav__search-results" id="menuSearchResults" hidden></div>
+      </div>
+      <a href="index.html#aisles" class="nav__link nav__link--desk">Our Aisles</a>
+      <p class="nav__group-label">Shop by aisle</p>
+      <div class="nav__cats">
+        <a href="groceries.html" class="nav__cat"><span class="nav__cat-n">Aisle 01</span>Groceries</a>
+        <a href="protein.html" class="nav__cat"><span class="nav__cat-n">Aisle 02</span>Fresh Protein</a>
+        <a href="frozen.html" class="nav__cat"><span class="nav__cat-n">Aisle 03</span>Frozen Foods</a>
+        <a href="household.html" class="nav__cat"><span class="nav__cat-n">Aisle 04</span>Household</a>
+      </div>
+      <p class="nav__group-label">Explore</p>
+      <a href="index.html#why" class="nav__link">Why Overal</a>
+      <a href="index.html#reviews" class="nav__link">Reviews</a>
+      <a href="index.html#visit" class="nav__link">Visit</a>
+      <a href="index.html#contact" class="nav__link nav__link--cta">Contact</a>
+      <div class="nav__foot">
+        <div class="nav__hours"><span class="nav__hours-k">Open today</span><span class="nav__hours-v">7AM &ndash; 8PM</span></div>
+        <div class="nav__cta-row">
+          <a href="https://wa.me/2348052240807" class="btn btn--gold glitter" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+2348052240807" class="btn btn--ghost-light">Call</a>
+        </div>
+      </div>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="cathero">
+  <span class="cathero__wm" aria-hidden="true">01</span>
+  <div class="cathero__inner">
+    <a href="index.html#aisles" class="cathero__back">&larr; All aisles</a>
+    <p class="eyebrow">Aisle 01</p>
+    <h1 class="cathero__title">Groceries &amp; Provisions</h1>
+    <p class="cathero__lede">Everyday staples, pantry essentials and the specialty goods — including Indian items — that keep Warri kitchens stocked.</p>
+    <div class="catsearch">
+      <svg class="catsearch__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" class="catsearch__input" id="catSearch" placeholder="Search this aisle&hellip;" autocomplete="off">
+      <span class="catsearch__count" id="catCount"></span>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by stock">
+      <button class="chip chip--on" data-f="all" type="button">All</button>
+      <button class="chip" data-f="in" type="button">In stock</button>
+      <button class="chip" data-f="low" type="button">Low stock</button>
+      <button class="chip" data-f="out" type="button">Out of stock</button>
+    </div>
+  </div>
+</section>
+
+<div class="catnav">
+  <div class="catnav__inner">
+    <a href="groceries.html" class="catnav__link catnav__link--active">Groceries</a>
+        <a href="protein.html" class="catnav__link">Fresh Protein</a>
+        <a href="frozen.html" class="catnav__link">Frozen Foods</a>
+        <a href="household.html" class="catnav__link">Household</a>
+  </div>
+</div>
+
+<section class="prods">
+  <div class="prods__grid" id="prodGrid" data-cat="groceries">
+      <button class="prod" type="button" data-pid="groceries-01" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/glrice.jpg" alt="Local Rice (5kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Local Rice (5kg)</h3>
+          <p class="prod__desc">Clean, destoned long-grain local rice by the bag.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-02" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gfrice.jpg" alt="Foreign Parboiled Rice (5kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Foreign Parboiled Rice (5kg)</h3>
+          <p class="prod__desc">Premium parboiled rice, fluffy and easy to cook.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-03" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gsemov.jpg" alt="Golden Penny Semovita (2kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Golden Penny Semovita (2kg)</h3>
+          <p class="prod__desc">Smooth semolina for soft, stretchy swallow.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-04" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gwheat.jpg" alt="Honeywell Wheat Meal (2kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Honeywell Wheat Meal (2kg)</h3>
+          <p class="prod__desc">Wholesome wheat flour for a healthier swallow.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="groceries-05" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/ggarr.jpg" alt="Garri (White, 4L)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Garri (White, 4L)</h3>
+          <p class="prod__desc">Crisp, dry white garri measured by the rubber.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-06" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gvoil.jpg" alt="Vegetable Oil (5L)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Vegetable Oil (5L)</h3>
+          <p class="prod__desc">Pure cooking oil for everyday frying and stews.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-07" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gpoil.jpg" alt="Palm Oil (2L)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Palm Oil (2L)</h3>
+          <p class="prod__desc">Rich, fresh red palm oil for native dishes.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-08" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/ggoil.jpg" alt="Groundnut Oil (1L)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Groundnut Oil (1L)</h3>
+          <p class="prod__desc">Light groundnut oil, great for frying.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="groceries-09" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gindom.jpg" alt="Indomie Noodles (Carton)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Indomie Noodles (Carton)</h3>
+          <p class="prod__desc">Full carton of chicken-flavour instant noodles.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-10" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gspag.jpg" alt="Spaghetti (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Spaghetti (Pack)</h3>
+          <p class="prod__desc">Golden durum spaghetti for quick family meals.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-11" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gpeak.jpg" alt="Peak Milk Powder (Tin)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Peak Milk Powder (Tin)</h3>
+          <p class="prod__desc">Full-cream powdered milk for tea and pap.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-12" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gmilo.jpg" alt="Milo (500g Tin)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Milo (500g Tin)</h3>
+          <p class="prod__desc">Chocolate malt drink the whole house loves.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="groceries-13" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gbour.jpg" alt="Bournvita (500g)" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Bournvita (500g)</h3>
+          <p class="prod__desc">Malted cocoa beverage, rich and energising.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-14" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/glipton.jpg" alt="Lipton Tea (Pack of 50)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Lipton Tea (Pack of 50)</h3>
+          <p class="prod__desc">Classic black tea bags for every morning.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="groceries-15" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gsuga.jpg" alt="Sugar (1kg)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Sugar (1kg)</h3>
+          <p class="prod__desc">Fine granulated white sugar.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-16" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gsalt.jpg" alt="Salt (1kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Salt (1kg)</h3>
+          <p class="prod__desc">Iodised table salt, free-flowing.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-17" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gmaggi.jpg" alt="Maggi Cubes (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Maggi Cubes (Pack)</h3>
+          <p class="prod__desc">Seasoning cubes for that deep, savoury base.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-18" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gtpaste.jpg" alt="Tomato Paste (Sachet x10)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Tomato Paste (Sachet x10)</h3>
+          <p class="prod__desc">Concentrated tomato paste for rich stews.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="groceries-19" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gcurr.jpg" alt="Curry & Thyme Set" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Curry & Thyme Set</h3>
+          <p class="prod__desc">Aromatic curry and thyme for jollof and sauces.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-20" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gbrice.jpg" alt="Basmati Rice (Indian, 5kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Basmati Rice (Indian, 5kg)</h3>
+          <p class="prod__desc">Fragrant long-grain basmati — specialty import.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="groceries-21" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/ggaram.jpg" alt="Garam Masala (Indian Spice)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Garam Masala (Indian Spice)</h3>
+          <p class="prod__desc">Authentic Indian spice blend for curries.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-22" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gbean.jpg" alt="Beans (Brown, 4L)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Beans (Brown, 4L)</h3>
+          <p class="prod__desc">Quality brown honey beans, well sorted.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="groceries-23" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gcust.jpg" alt="Custard (500g)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Custard (500g)</h3>
+          <p class="prod__desc">Smooth vanilla custard for breakfast.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="groceries-24" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gcorn.jpg" alt="Cornflakes (500g)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Cornflakes (500g)</h3>
+          <p class="prod__desc">Crispy golden cornflakes for quick mornings.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="groceries-25" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/gtoma.jpg" alt="Tin Tomatoes (Carton)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Tin Tomatoes (Carton)</h3>
+          <p class="prod__desc">Carton of peeled plum tomatoes.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+  </div>
+  <div class="prods__empty" id="prodEmpty" hidden>
+    <p class="prods__empty-big">Nothing here matches &ldquo;<span id="emptyQ"></span>&rdquo;.</p>
+    <div class="prods__empty-other" id="otherResults"></div>
+  </div>
+  <p class="prods__note">Stock counts are indicative and updated regularly. Tap any item to ask us directly on WhatsApp.</p>
+</section>
+</main>
+
+<div class="demo-note">This is a <strong>demo website</strong> created by JKB Global to showcase design &amp; features. Products, stock status and details are samples, not a live store. &mdash; <strong>JKB Global</strong></div>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__col foot__col--brand">
+      <div class="foot__brandrow"><span class="nav__mark glitter" aria-hidden="true">O</span><span class="foot__name">Overal Stores</span></div>
+      <p class="foot__blurb">Everything your home needs, in Warri &mdash; fair prices, fresh stock, friendly faces.</p>
+    </div>
+    <div class="foot__col">
+      <p class="foot__h">Aisles</p>
+      <a href="groceries.html">Groceries &amp; Provisions</a>
+      <a href="protein.html">Fresh Protein</a>
+      <a href="frozen.html">Frozen Foods</a>
+      <a href="household.html">Household &amp; Cosmetics</a>
+    </div>
+    <div class="foot__col">
+      <p class="foot__h">Visit</p>
+      <p class="foot__line">Otres, Ekurede Itsekiri, Warri</p>
+      <p class="foot__line">Mon&ndash;Sat 7AM&ndash;8PM &middot; Closed Thursday</p>
+      <a href="tel:+2348052240807">+234 805 224 0807</a>
+      <a href="https://wa.me/2348052240807" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+  <div class="foot__bar"><span>Overal Stores &middot; Warri</span><span>Crafted by <a href="https://jkbglobal.site" target="_blank" rel="noopener">JKB Global</a></span></div>
+</footer>
+
+<a href="https://wa.me/2348052240807" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.04c-.24.68-1.42 1.31-1.95 1.36-.5.05-1.13.21-3.66-.77-3.08-1.21-5.05-4.34-5.2-4.54-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.43-.07.68.52.24.59.83 2.04.9 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.39-.45.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.19-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.71-.17 1.39z"/></svg>
+</a>
+<button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
+
+<div class="pmodal" id="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmTitle" hidden>
+  <div class="pmodal__backdrop" data-close></div>
+  <div class="pmodal__card">
+    <div class="pmodal__grab" aria-hidden="true"></div>
+    <button class="pmodal__close" data-close aria-label="Close">&times;</button>
+    <div class="pmodal__imgwrap"><img id="pmImg" src="" alt="Product" class="pmodal__productimg"></div>
+    <div class="pmodal__body">
+      <p class="pmodal__cat" id="pmCat"></p>
+      <h3 class="pmodal__title" id="pmTitle"></h3>
+      <p class="pmodal__desc" id="pmDesc"></p>
+      <div class="pmodal__stockrow"><span class="prod__dot" id="pmDot"></span><span id="pmStock"></span></div>
+      <div class="pmodal__actions">
+        <a class="btn btn--gold glitter" id="pmWa" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn--ghost-light" href="tel:+2348052240807">Call store</a>
+      </div>
+      <p class="pmodal__hint">The WhatsApp message is pre-written &mdash; just hit send.</p>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<div class="demo-badge" aria-label="Demo website"><span class="demo-badge__dot"></span>Demo</div>
+</body>
+</html>

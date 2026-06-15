@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Protein — Overal Stores</title>
+<meta name="description" content="Fresh Protein at Overal Stores, Warri. Search the shelf and ask on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav scrolled nav--static" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark glitter" aria-hidden="true">O</span>
+      <span class="nav__name">Overal Stores</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <div class="nav__search">
+        <svg class="nav__search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" class="nav__search-input" id="menuSearch" placeholder="Search products&hellip;" autocomplete="off">
+        <div class="nav__search-results" id="menuSearchResults" hidden></div>
+      </div>
+      <a href="index.html#aisles" class="nav__link nav__link--desk">Our Aisles</a>
+      <p class="nav__group-label">Shop by aisle</p>
+      <div class="nav__cats">
+        <a href="groceries.html" class="nav__cat"><span class="nav__cat-n">Aisle 01</span>Groceries</a>
+        <a href="protein.html" class="nav__cat"><span class="nav__cat-n">Aisle 02</span>Fresh Protein</a>
+        <a href="frozen.html" class="nav__cat"><span class="nav__cat-n">Aisle 03</span>Frozen Foods</a>
+        <a href="household.html" class="nav__cat"><span class="nav__cat-n">Aisle 04</span>Household</a>
+      </div>
+      <p class="nav__group-label">Explore</p>
+      <a href="index.html#why" class="nav__link">Why Overal</a>
+      <a href="index.html#reviews" class="nav__link">Reviews</a>
+      <a href="index.html#visit" class="nav__link">Visit</a>
+      <a href="index.html#contact" class="nav__link nav__link--cta">Contact</a>
+      <div class="nav__foot">
+        <div class="nav__hours"><span class="nav__hours-k">Open today</span><span class="nav__hours-v">7AM &ndash; 8PM</span></div>
+        <div class="nav__cta-row">
+          <a href="https://wa.me/2348052240807" class="btn btn--gold glitter" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+2348052240807" class="btn btn--ghost-light">Call</a>
+        </div>
+      </div>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="cathero">
+  <span class="cathero__wm" aria-hidden="true">02</span>
+  <div class="cathero__inner">
+    <a href="index.html#aisles" class="cathero__back">&larr; All aisles</a>
+    <p class="eyebrow">Aisle 02</p>
+    <h1 class="cathero__title">Fresh Protein</h1>
+    <p class="cathero__lede">Fresh meat, fish and protein that regulars rate among the best in Warri — quality you can see before you buy.</p>
+    <div class="catsearch">
+      <svg class="catsearch__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" class="catsearch__input" id="catSearch" placeholder="Search this aisle&hellip;" autocomplete="off">
+      <span class="catsearch__count" id="catCount"></span>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by stock">
+      <button class="chip chip--on" data-f="all" type="button">All</button>
+      <button class="chip" data-f="in" type="button">In stock</button>
+      <button class="chip" data-f="low" type="button">Low stock</button>
+      <button class="chip" data-f="out" type="button">Out of stock</button>
+    </div>
+  </div>
+</section>
+
+<div class="catnav">
+  <div class="catnav__inner">
+    <a href="groceries.html" class="catnav__link">Groceries</a>
+        <a href="protein.html" class="catnav__link catnav__link--active">Fresh Protein</a>
+        <a href="frozen.html" class="catnav__link">Frozen Foods</a>
+        <a href="household.html" class="catnav__link">Household</a>
+  </div>
+</div>
+
+<section class="prods">
+  <div class="prods__grid" id="prodGrid" data-cat="protein">
+      <button class="prod prod--low" type="button" data-pid="protein-01" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pbeef.jpg" alt="Fresh Beef (per kg)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Fresh Beef (per kg)</h3>
+          <p class="prod__desc">Trimmed, fresh red meat cut to order.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="protein-02" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pgoat.jpg" alt="Goat Meat (per kg)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Goat Meat (per kg)</h3>
+          <p class="prod__desc">Fresh goat meat, perfect for pepper soup.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-03" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pchic.jpg" alt="Chicken (Whole, Frozen)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Chicken (Whole, Frozen)</h3>
+          <p class="prod__desc">Whole dressed chicken, cleaned and ready.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-04" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/plaps.jpg" alt="Chicken Laps (per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Chicken Laps (per kg)</h3>
+          <p class="prod__desc">Meaty chicken laps by weight.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-05" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pturk.jpg" alt="Turkey (per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Turkey (per kg)</h3>
+          <p class="prod__desc">Fresh turkey portions, well dressed.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="protein-06" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pcleg.jpg" alt="Cow Leg (per kg)" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Cow Leg (per kg)</h3>
+          <p class="prod__desc">Cut cow leg for rich, gelatinous soups.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-07" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pshak.jpg" alt="Shaki (Tripe, per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Shaki (Tripe, per kg)</h3>
+          <p class="prod__desc">Cleaned cow tripe for assorted meat.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-08" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pponm.jpg" alt="Ponmo (Cow Skin)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Ponmo (Cow Skin)</h3>
+          <p class="prod__desc">Soft, well-cleaned cow skin.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-09" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pcatfish.jpg" alt="Fresh Catfish (per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Fresh Catfish (per kg)</h3>
+          <p class="prod__desc">Live-fresh catfish for peppersoup and stews.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-10" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/ptitus.jpg" alt="Titus Fish (Frozen, per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Titus Fish (Frozen, per kg)</h3>
+          <p class="prod__desc">Premium frozen mackerel, firm and fresh.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-11" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pcroak.jpg" alt="Croaker Fish (per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Croaker Fish (per kg)</h3>
+          <p class="prod__desc">Quality croaker, great grilled or fried.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="protein-12" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pdfish.jpg" alt="Dried Fish (Stockfish)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Dried Fish (Stockfish)</h3>
+          <p class="prod__desc">Sun-dried stockfish for deep flavour.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-13" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pcray.jpg" alt="Crayfish (Ground, 500g)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Crayfish (Ground, 500g)</h3>
+          <p class="prod__desc">Finely ground crayfish seasoning.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="protein-14" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/psfish.jpg" alt="Smoked Fish (per piece)" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Smoked Fish (per piece)</h3>
+          <p class="prod__desc">Wood-smoked fish, ready for the pot.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-15" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/ppraw.jpg" alt="Prawns (Frozen, 500g)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Prawns (Frozen, 500g)</h3>
+          <p class="prod__desc">Cleaned frozen prawns, deveined.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-16" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/psnai.jpg" alt="Snail (Cleaned, per piece)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Snail (Cleaned, per piece)</h3>
+          <p class="prod__desc">Large cleaned snails for delicacies.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="protein-17" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/peggs.jpg" alt="Eggs (Crate of 30)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Eggs (Crate of 30)</h3>
+          <p class="prod__desc">Fresh full crate of medium eggs.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-18" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pgizz.jpg" alt="Gizzard (per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Gizzard (per kg)</h3>
+          <p class="prod__desc">Fresh chicken gizzards by weight.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-19" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/psaus.jpg" alt="Sausage (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Sausage (Pack)</h3>
+          <p class="prod__desc">Seasoned beef sausages, ready to fry.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-20" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/phdog.jpg" alt="Hot Dogs (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Hot Dogs (Pack)</h3>
+          <p class="prod__desc">Smoky hot dog sausages.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="protein-21" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pctail.jpg" alt="Cow Tail (per kg)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Cow Tail (per kg)</h3>
+          <p class="prod__desc">Rich oxtail cuts for hearty soups.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-22" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/ppork.jpg" alt="Pork (per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Pork (per kg)</h3>
+          <p class="prod__desc">Fresh pork cuts, trimmed.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="protein-23" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pkote.jpg" alt="Kote Fish (per kg)" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Kote Fish (per kg)</h3>
+          <p class="prod__desc">Affordable, tasty kote for everyday meals.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-24" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/pperi.jpg" alt="Periwinkle (Cleaned)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Periwinkle (Cleaned)</h3>
+          <p class="prod__desc">Cleaned periwinkles for native soups.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="protein-25" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/plive.jpg" alt="Liver (per kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Liver (per kg)</h3>
+          <p class="prod__desc">Fresh beef liver, iron-rich.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+  </div>
+  <div class="prods__empty" id="prodEmpty" hidden>
+    <p class="prods__empty-big">Nothing here matches &ldquo;<span id="emptyQ"></span>&rdquo;.</p>
+    <div class="prods__empty-other" id="otherResults"></div>
+  </div>
+  <p class="prods__note">Stock counts are indicative and updated regularly. Tap any item to ask us directly on WhatsApp.</p>
+</section>
+</main>
+
+<div class="demo-note">This is a <strong>demo website</strong> created by JKB Global to showcase design &amp; features. Products, stock status and details are samples, not a live store. &mdash; <strong>JKB Global</strong></div>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__col foot__col--brand">
+      <div class="foot__brandrow"><span class="nav__mark glitter" aria-hidden="true">O</span><span class="foot__name">Overal Stores</span></div>
+      <p class="foot__blurb">Everything your home needs, in Warri &mdash; fair prices, fresh stock, friendly faces.</p>
+    </div>
+    <div class="foot__col">
+      <p class="foot__h">Aisles</p>
+      <a href="groceries.html">Groceries &amp; Provisions</a>
+      <a href="protein.html">Fresh Protein</a>
+      <a href="frozen.html">Frozen Foods</a>
+      <a href="household.html">Household &amp; Cosmetics</a>
+    </div>
+    <div class="foot__col">
+      <p class="foot__h">Visit</p>
+      <p class="foot__line">Otres, Ekurede Itsekiri, Warri</p>
+      <p class="foot__line">Mon&ndash;Sat 7AM&ndash;8PM &middot; Closed Thursday</p>
+      <a href="tel:+2348052240807">+234 805 224 0807</a>
+      <a href="https://wa.me/2348052240807" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+  <div class="foot__bar"><span>Overal Stores &middot; Warri</span><span>Crafted by <a href="https://jkbglobal.site" target="_blank" rel="noopener">JKB Global</a></span></div>
+</footer>
+
+<a href="https://wa.me/2348052240807" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.04c-.24.68-1.42 1.31-1.95 1.36-.5.05-1.13.21-3.66-.77-3.08-1.21-5.05-4.34-5.2-4.54-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.43-.07.68.52.24.59.83 2.04.9 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.39-.45.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.19-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.71-.17 1.39z"/></svg>
+</a>
+<button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
+
+<div class="pmodal" id="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmTitle" hidden>
+  <div class="pmodal__backdrop" data-close></div>
+  <div class="pmodal__card">
+    <div class="pmodal__grab" aria-hidden="true"></div>
+    <button class="pmodal__close" data-close aria-label="Close">&times;</button>
+    <div class="pmodal__imgwrap"><img id="pmImg" src="" alt="Product" class="pmodal__productimg"></div>
+    <div class="pmodal__body">
+      <p class="pmodal__cat" id="pmCat"></p>
+      <h3 class="pmodal__title" id="pmTitle"></h3>
+      <p class="pmodal__desc" id="pmDesc"></p>
+      <div class="pmodal__stockrow"><span class="prod__dot" id="pmDot"></span><span id="pmStock"></span></div>
+      <div class="pmodal__actions">
+        <a class="btn btn--gold glitter" id="pmWa" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn--ghost-light" href="tel:+2348052240807">Call store</a>
+      </div>
+      <p class="pmodal__hint">The WhatsApp message is pre-written &mdash; just hit send.</p>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<div class="demo-badge" aria-label="Demo website"><span class="demo-badge__dot"></span>Demo</div>
+</body>
+</html>

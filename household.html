@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Household & Cosmetics — Overal Stores</title>
+<meta name="description" content="Household & Cosmetics at Overal Stores, Warri. Search the shelf and ask on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav scrolled nav--static" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark glitter" aria-hidden="true">O</span>
+      <span class="nav__name">Overal Stores</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <div class="nav__search">
+        <svg class="nav__search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" class="nav__search-input" id="menuSearch" placeholder="Search products&hellip;" autocomplete="off">
+        <div class="nav__search-results" id="menuSearchResults" hidden></div>
+      </div>
+      <a href="index.html#aisles" class="nav__link nav__link--desk">Our Aisles</a>
+      <p class="nav__group-label">Shop by aisle</p>
+      <div class="nav__cats">
+        <a href="groceries.html" class="nav__cat"><span class="nav__cat-n">Aisle 01</span>Groceries</a>
+        <a href="protein.html" class="nav__cat"><span class="nav__cat-n">Aisle 02</span>Fresh Protein</a>
+        <a href="frozen.html" class="nav__cat"><span class="nav__cat-n">Aisle 03</span>Frozen Foods</a>
+        <a href="household.html" class="nav__cat"><span class="nav__cat-n">Aisle 04</span>Household</a>
+      </div>
+      <p class="nav__group-label">Explore</p>
+      <a href="index.html#why" class="nav__link">Why Overal</a>
+      <a href="index.html#reviews" class="nav__link">Reviews</a>
+      <a href="index.html#visit" class="nav__link">Visit</a>
+      <a href="index.html#contact" class="nav__link nav__link--cta">Contact</a>
+      <div class="nav__foot">
+        <div class="nav__hours"><span class="nav__hours-k">Open today</span><span class="nav__hours-v">7AM &ndash; 8PM</span></div>
+        <div class="nav__cta-row">
+          <a href="https://wa.me/2348052240807" class="btn btn--gold glitter" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+2348052240807" class="btn btn--ghost-light">Call</a>
+        </div>
+      </div>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="cathero">
+  <span class="cathero__wm" aria-hidden="true">04</span>
+  <div class="cathero__inner">
+    <a href="index.html#aisles" class="cathero__back">&larr; All aisles</a>
+    <p class="eyebrow">Aisle 04</p>
+    <h1 class="cathero__title">Household &amp; Cosmetics</h1>
+    <p class="cathero__lede">Cleaning supplies, home essentials and a cosmetics range — the everyday extras, all in one trip.</p>
+    <div class="catsearch">
+      <svg class="catsearch__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" class="catsearch__input" id="catSearch" placeholder="Search this aisle&hellip;" autocomplete="off">
+      <span class="catsearch__count" id="catCount"></span>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by stock">
+      <button class="chip chip--on" data-f="all" type="button">All</button>
+      <button class="chip" data-f="in" type="button">In stock</button>
+      <button class="chip" data-f="low" type="button">Low stock</button>
+      <button class="chip" data-f="out" type="button">Out of stock</button>
+    </div>
+  </div>
+</section>
+
+<div class="catnav">
+  <div class="catnav__inner">
+    <a href="groceries.html" class="catnav__link">Groceries</a>
+        <a href="protein.html" class="catnav__link">Fresh Protein</a>
+        <a href="frozen.html" class="catnav__link">Frozen Foods</a>
+        <a href="household.html" class="catnav__link catnav__link--active">Household</a>
+  </div>
+</div>
+
+<section class="prods">
+  <div class="prods__grid" id="prodGrid" data-cat="household">
+      <button class="prod" type="button" data-pid="household-01" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hdete.jpg" alt="Detergent (Ariel, 1kg)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Detergent (Ariel, 1kg)</h3>
+          <p class="prod__desc">Powerful washing powder for tough stains.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-02" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hlsoap.jpg" alt="Liquid Soap (1L)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Liquid Soap (1L)</h3>
+          <p class="prod__desc">Multi-surface liquid cleaner.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-03" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hbsoap.jpg" alt="Bar Soap (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Bar Soap (Pack)</h3>
+          <p class="prod__desc">Laundry bar soap, long-lasting.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-04" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hblea.jpg" alt="Bleach (Hypo, 1L)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Bleach (Hypo, 1L)</h3>
+          <p class="prod__desc">Disinfecting bleach for whites and surfaces.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="household-05" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/htoil.jpg" alt="Toilet Roll (Pack of 10)" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Toilet Roll (Pack of 10)</h3>
+          <p class="prod__desc">Soft 2-ply tissue, big pack.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-06" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hfresh.jpg" alt="Air Freshener (Spray)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Air Freshener (Spray)</h3>
+          <p class="prod__desc">Long-lasting room freshener.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-07" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hdish.jpg" alt="Dishwashing Liquid (750ml)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Dishwashing Liquid (750ml)</h3>
+          <p class="prod__desc">Grease-cutting dish soap.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-08" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hspon.jpg" alt="Sponge & Scourer (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Sponge & Scourer (Pack)</h3>
+          <p class="prod__desc">Kitchen sponges and scourers.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="household-09" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hinsect.jpg" alt="Insecticide (Raid)" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Insecticide (Raid)</h3>
+          <p class="prod__desc">Fast-acting insect spray.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="household-10" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hmosq.jpg" alt="Mosquito Coil (Pack)" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Mosquito Coil (Pack)</h3>
+          <p class="prod__desc">Slow-burn coils for the night.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="household-11" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/htooth.jpg" alt="Toothpaste (Close-Up)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Toothpaste (Close-Up)</h3>
+          <p class="prod__desc">Fresh-breath fluoride toothpaste.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-12" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hbrush.jpg" alt="Toothbrush (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Toothbrush (Pack)</h3>
+          <p class="prod__desc">Soft-bristle toothbrushes.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="household-13" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hbath.jpg" alt="Bath Soap (Lux/Dove)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Bath Soap (Lux/Dove)</h3>
+          <p class="prod__desc">Moisturising beauty bath soap.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-14" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hlotion.jpg" alt="Body Lotion (500ml)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Body Lotion (500ml)</h3>
+          <p class="prod__desc">Smooth daily moisturising lotion.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-15" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hbody.jpg" alt="Body Spray (Deodorant)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Body Spray (Deodorant)</h3>
+          <p class="prod__desc">Long-lasting fragrance spray.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-16" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hdeo.jpg" alt="Roll-On Deodorant" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Roll-On Deodorant</h3>
+          <p class="prod__desc">Anti-perspirant roll-on.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="household-17" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hshamp.jpg" alt="Shampoo (400ml)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Shampoo (400ml)</h3>
+          <p class="prod__desc">Cleansing shampoo for all hair types.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-18" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hhair.jpg" alt="Hair Cream / Relaxer" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Hair Cream / Relaxer</h3>
+          <p class="prod__desc">Conditioning hair cream.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-19" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hpads.jpg" alt="Sanitary Pads (Pack)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Sanitary Pads (Pack)</h3>
+          <p class="prod__desc">Soft, secure feminine pads.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="household-20" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hdiap.jpg" alt="Baby Diapers (Pack)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Baby Diapers (Pack)</h3>
+          <p class="prod__desc">Dry-comfort diapers, assorted sizes.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--low" type="button" data-pid="household-21" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hwipes.jpg" alt="Baby Wipes (Pack)" class="prod__img">
+          <span class="prod__pill st-low"><span class="prod__dot"></span>Low</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Baby Wipes (Pack)</h3>
+          <p class="prod__desc">Gentle fragrance-free wipes.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod prod--out" type="button" data-pid="household-22" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/htissue.jpg" alt="Tissue Box" class="prod__img">
+          <span class="prod__pill st-out"><span class="prod__dot"></span>Out</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Tissue Box</h3>
+          <p class="prod__desc">Soft facial tissue box.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-23" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hhwash.jpg" alt="Hand Wash (Antibacterial)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Hand Wash (Antibacterial)</h3>
+          <p class="prod__desc">Antibacterial liquid hand wash.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-24" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hpowder.jpg" alt="Face Powder / Makeup" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Face Powder / Makeup</h3>
+          <p class="prod__desc">Basic cosmetics & face powder range.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+      <button class="prod" type="button" data-pid="household-25" aria-haspopup="dialog">
+        <div class="prod__imgwrap">
+          <img src="assets/pics-vids/hjelly.jpg" alt="Petroleum Jelly (Vaseline)" class="prod__img">
+          <span class="prod__pill st-in"><span class="prod__dot"></span>In stock</span>
+        </div>
+        <div class="prod__body">
+          <h3 class="prod__name">Petroleum Jelly (Vaseline)</h3>
+          <p class="prod__desc">Classic skin protecting jelly.</p>
+          <span class="prod__more">View &amp; ask &rarr;</span>
+        </div>
+      </button>
+  </div>
+  <div class="prods__empty" id="prodEmpty" hidden>
+    <p class="prods__empty-big">Nothing here matches &ldquo;<span id="emptyQ"></span>&rdquo;.</p>
+    <div class="prods__empty-other" id="otherResults"></div>
+  </div>
+  <p class="prods__note">Stock counts are indicative and updated regularly. Tap any item to ask us directly on WhatsApp.</p>
+</section>
+</main>
+
+<div class="demo-note">This is a <strong>demo website</strong> created by JKB Global to showcase design &amp; features. Products, stock status and details are samples, not a live store. &mdash; <strong>JKB Global</strong></div>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__col foot__col--brand">
+      <div class="foot__brandrow"><span class="nav__mark glitter" aria-hidden="true">O</span><span class="foot__name">Overal Stores</span></div>
+      <p class="foot__blurb">Everything your home needs, in Warri &mdash; fair prices, fresh stock, friendly faces.</p>
+    </div>
+    <div class="foot__col">
+      <p class="foot__h">Aisles</p>
+      <a href="groceries.html">Groceries &amp; Provisions</a>
+      <a href="protein.html">Fresh Protein</a>
+      <a href="frozen.html">Frozen Foods</a>
+      <a href="household.html">Household &amp; Cosmetics</a>
+    </div>
+    <div class="foot__col">
+      <p class="foot__h">Visit</p>
+      <p class="foot__line">Otres, Ekurede Itsekiri, Warri</p>
+      <p class="foot__line">Mon&ndash;Sat 7AM&ndash;8PM &middot; Closed Thursday</p>
+      <a href="tel:+2348052240807">+234 805 224 0807</a>
+      <a href="https://wa.me/2348052240807" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+  <div class="foot__bar"><span>Overal Stores &middot; Warri</span><span>Crafted by <a href="https://jkbglobal.site" target="_blank" rel="noopener">JKB Global</a></span></div>
+</footer>
+
+<a href="https://wa.me/2348052240807" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.04c-.24.68-1.42 1.31-1.95 1.36-.5.05-1.13.21-3.66-.77-3.08-1.21-5.05-4.34-5.2-4.54-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.43-.07.68.52.24.59.83 2.04.9 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.39-.45.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.19-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.71-.17 1.39z"/></svg>
+</a>
+<button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
+
+<div class="pmodal" id="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmTitle" hidden>
+  <div class="pmodal__backdrop" data-close></div>
+  <div class="pmodal__card">
+    <div class="pmodal__grab" aria-hidden="true"></div>
+    <button class="pmodal__close" data-close aria-label="Close">&times;</button>
+    <div class="pmodal__imgwrap"><img id="pmImg" src="" alt="Product" class="pmodal__productimg"></div>
+    <div class="pmodal__body">
+      <p class="pmodal__cat" id="pmCat"></p>
+      <h3 class="pmodal__title" id="pmTitle"></h3>
+      <p class="pmodal__desc" id="pmDesc"></p>
+      <div class="pmodal__stockrow"><span class="prod__dot" id="pmDot"></span><span id="pmStock"></span></div>
+      <div class="pmodal__actions">
+        <a class="btn btn--gold glitter" id="pmWa" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn--ghost-light" href="tel:+2348052240807">Call store</a>
+      </div>
+      <p class="pmodal__hint">The WhatsApp message is pre-written &mdash; just hit send.</p>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<div class="demo-badge" aria-label="Demo website"><span class="demo-badge__dot"></span>Demo</div>
+</body>
+</html>
